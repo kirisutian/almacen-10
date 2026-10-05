@@ -1,0 +1,25 @@
+# Carpeta de compilación de Maven (jars, clases, reportes)
+target/
+
+# Configuración e índices propios de IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Wrapper de Maven (no se necesita, el build usa la imagen maven:3.9)
+.mvn/
+mvnw
+mvnw.cmd
+
+# Control de versiones
+.git/
+.gitignore
+
+# Variables de entorno y secretos locales
+.env
+
+# Logs y archivos temporales del sistema
+*.log
+.DS_Store
+data

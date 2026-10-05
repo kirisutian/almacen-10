@@ -1,0 +1,12 @@
+services:
+  almacen-app:
+    image: almacen-app:latest
+    build: .
+    container_name: almacen-app
+    environment:
+      PORT: ${PORT}
+      DB_URL: ${DB_URL_DOCKER}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+    ports:
+      - "${PORT}:${PORT}"
